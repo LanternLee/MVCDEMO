@@ -1,0 +1,20 @@
+﻿@using MvcDemo.DAL;
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @foreach (GENRE g in (IEnumerable<GENRE>)ViewData.Model)
+        {
+            <p>ID:@g.ID</p>
+            <p>Name:@g.NAME</p>
+            <p>SortOrder:@g.SORTORDER</p>
+        }
+    </div>
+</body>
+</html>
+
+
